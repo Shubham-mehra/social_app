@@ -1,0 +1,85 @@
+@import "./main.scss";
+@import "./support.scss";
+@import "./animations.scss";
+@import "./fontFace.scss";
+
+body p {
+  margin: 12px auto;
+}
+
+.DDL{
+  display:block;
+  position:relative;
+  height:60px;
+  width:100%;
+}
+
+.DDL:hover .theCircle{
+  display:block;
+  
+}
+
+.DDL:hover .theCircle:hover{
+  display:block;
+ 
+}
+.theCircle{
+  display:none;
+  position:absolute;
+  text-align: center;
+  float:right;
+  border-radius:50%;
+  width:35px;
+  height:37px;
+  background-color: rgb(211,237,255);
+  top:15px;
+  bottom:15px;
+  right:23px;
+}
+
+.theCircle:hover{
+  display: block;
+}
+.theText{
+  position:relative;
+  top:25px;
+  bottom:24px;
+  left:24px;
+  font-family: HelveticaNeueW01-55Roma,HelveticaNeueW02-55Roma,HelveticaNeueW10-55Roma,sans-serif;
+  font-size:16px;
+  color: #162D3D;
+  line-height:19.2px;
+}
+.arrow{
+  position:absolute;
+  float:right;
+  z-index: 1;
+  top:24px;
+  right:30px;
+  height: 20px;
+  width:20px;
+}
+.settingIcons{
+  text-align: center;
+}
+.design-tab a{
+  text-decoration: none;
+}
+#backButton
+{
+  background-color: #3899ec;
+  border-radius: 20px;
+  height: 20px;
+  opacity: 0.2;
+  padding: 0px;
+  font-size: 13px;
+  width: 63px;
+
+}
+#backButton:hover{
+  opacity: 1;
+}
+
+.section1 a:hover {
+  text-decoration: none;
+}

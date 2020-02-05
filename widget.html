@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="StarterApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Icons</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://static.parastorage.com/services/js-sdk/1.109.0/js/wix.min.js"></script>
+    <script src="https://static.parastorage.com/services/third-party/jquery/3.1.1/dist/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="/widget.js"></script>
+</head> 
+<body ng-controller="WidgetCtrl">
+   <ul id="menu" >
+              <li ng-show="settingsData.disp_facebook_icon"><a ng-click="facebookUrl()"><i id="icons"  class="fa fa-facebook "></i> </a></li>
+              <li ng-show="settingsData.disp_instagram_icon"><a ng-click="instagramUrl()"><i id="icons"  class="fa fa-instagram "></i> </a></li>
+              <li ng-show="settingsData.disp_twitter_icon"><a ng-click="twitterUrl()"><i id="icons"  class="fa fa-twitter "></i> </a></li>
+              <li ng-show="settingsData.disp_spotify_icon"><a ng-click="spotifyUrl()"><i id="icons"  class="fa fa-spotify "></i> </a></li>
+              <li ng-show="settingsData.disp_amazon_icon"><a ng-click="amazonUrl()"><i id="icons"  class="fa fa-amazon "></i> </a></li>
+              <li ng-show="settingsData.disp_apple_icon"><a ng-click="appleUrl()"><i id="icons"  class="fa fa-apple "></i> </a></li>
+              <li ng-show="settingsData.disp_youtube_icon"><a ng-click="youtubeUrl()"><i id="icons"  class="fa fa-youtube-play"></i> </a></li>			  
+        </ul>
+</body>
+</html>
